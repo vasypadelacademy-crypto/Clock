@@ -1,13 +1,3 @@
-// vite.config.ts
-export default defineConfig(() => {
-  return {
-    base: "/Clock/", // ⬅️ REPLACE THIS WITH YOUR GITHUB REPO NAME
-    plugins: [react(), tailwindcss()],
-    // ... rest of your config
-  };
-});
-
-
 import tailwindcss from '@tailwindcss/vite';
 import react from '@vitejs/plugin-react';
 import path from 'path';
@@ -16,6 +6,7 @@ import {defineConfig} from 'vite';
 export default defineConfig(() => {
   return {
     plugins: [react(), tailwindcss()],
+    base: './',
     resolve: {
       alias: {
         '@': path.resolve(__dirname, '.'),

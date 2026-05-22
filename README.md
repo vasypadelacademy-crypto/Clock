@@ -1,20 +1,30 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# Date and Clock App
 
-# Run and deploy your AI Studio app
+A simple application that displays the current date and time.
 
-This contains everything you need to run your app locally.
+## How to run locally
 
-View your app in AI Studio: https://ai.studio/apps/693ab114-1281-479c-be38-099e850d4b81
+1. Clone this repository.
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Run the development server:
+   ```bash
+   npm run dev
+   ```
 
-## Run Locally
+## How to build for production
 
-**Prerequisites:**  Node.js
+1. Run the build command:
+   ```bash
+   npm run build
+   ```
+2. The production files will be in the `dist/` directory.
 
+## Deploying to GitHub Pages
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+This app is configured to be deployed as a static site. The `vite.config.ts` has been set up with `base: './'` to ensure that assets are resolved correctly when hosted on GitHub Pages or other subdirectories.
+
+1. Ensure you have built the app using `npm run build`.
+2. Configure your GitHub repository to deploy the contents of the `dist/` folder.
