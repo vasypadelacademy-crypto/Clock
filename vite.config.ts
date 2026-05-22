@@ -1,7 +1,7 @@
 // vite.config.ts
 export default defineConfig(() => {
   return {
-    base: "/d/", // ⬅️ REPLACE THIS WITH YOUR GITHUB REPO NAME
+    base: "/Clock/", // ⬅️ REPLACE THIS WITH YOUR GITHUB REPO NAME
     plugins: [react(), tailwindcss()],
     // ... rest of your config
   };
